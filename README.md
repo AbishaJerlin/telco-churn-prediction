@@ -8,7 +8,7 @@ This was originally a **group project of 5 members**, each of whom independently
 
 **My role:** I implemented the **Decision Tree classifier** end-to-end — hyperparameter tuning, evaluation, feature importance analysis, calibration and the shared Logistic Regression baseline used across the whole group for comparison. That work is `telco_churn_decision_tree.ipynb`.
 
-The preprocessing pipeline (`00_shared_preprocessing_pipeline.ipynb`) was co-developed by the whole team and is included here only because my notebook depends on its output (`telco_processed.csv`) to run — it is **not** presented as solely my work.
+The preprocessing pipeline (`shared_preprocessing_pipeline.ipynb`) was co-developed by the whole team and is included here only because my notebook depends on its output (`telco_processed.csv`) to run — it is **not** presented as solely my work.
 
 ## Results (Decision Tree, test set)
 
@@ -30,8 +30,8 @@ Feature importance and the Logistic Regression coefficients both pointed to **co
 
 ```
 ├── telco_churn_decision_tree.ipynb        # My individual work: DT model, tuning, evaluation, LR benchmark
-├── 00_shared_preprocessing_pipeline.ipynb # Group preprocessing notebook (dependency only)
-├── data_raw_telco_customer_churn.csv      # Raw dataset (source: Kaggle, see below)
+├── shared_preprocessing_pipeline.ipynb    # Group preprocessing notebook (dependency only)
+├── telco-customer-churn.csv               # Raw dataset (source: Kaggle, see below)
 ├── telco_processed.csv                    # Cleaned/engineered dataset (output of preprocessing notebook)
 ├── requirements.txt
 └── .gitignore
@@ -61,7 +61,7 @@ jupyter notebook
 ```
 
 Run in order:
-1. `00_shared_preprocessing_pipeline.ipynb` — produces `telco_processed.csv` from the raw data
+1. `shared_preprocessing_pipeline.ipynb` — produces `telco_processed.csv` from the raw data
 2. `telco_churn_decision_tree.ipynb` — trains, tunes and evaluates the Decision Tree and Logistic Regression models
 
 Reproducibility: `random_state=42` is used throughout for the split and all models.

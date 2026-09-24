@@ -34,6 +34,7 @@ Feature importance and the Logistic Regression coefficients both pointed to **co
 ├── telco-customer-churn.csv               # Raw dataset (source: Kaggle, see below)
 ├── telco_processed.csv                    # Cleaned/engineered dataset (output of preprocessing notebook)
 ├── requirements.txt
+├── LICENSE
 └── .gitignore
 ```
 
@@ -69,3 +70,7 @@ Reproducibility: `random_state=42` is used throughout for the split and all mode
 ## Acknowledgements
 
 Preprocessing pipeline co-developed with my group project teammates as part of a University of Surrey coursework assignment. Their notebooks (Naive Bayes, kNN, MLP, Linear SVM) and the consolidated group dashboard are not included in this repository, as this repo showcases my individual contribution only.
+
+## License
+
+This project is licensed under the MIT License. See `LICENSE` for details.

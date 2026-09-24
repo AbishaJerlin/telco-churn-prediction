@@ -22,7 +22,7 @@ The preprocessing pipeline (`shared_preprocessing_pipeline.ipynb`) was co-develo
 | PR-AUC | 0.5853 |
 | MCC | 0.4870 |
 
-The tuned Decision Tree achieved the highest F1-score among all five algorithms compared in the wider group project (Decision Tree, Naive Bayes, kNN, MLP, Linear SVM), with strong recall (82.4% of churners correctly identified) and good generalisation (overfit gap of only 0.014 between train and validation F1).
+In the final group comparison, the tuned Decision Tree achieved the highest reported F1-score among the five evaluated algorithms (Decision Tree, Naive Bayes, kNN, MLP and Linear SVM), with strong recall (82.4% of churners correctly identified) and an overfit gap of 0.014 between train and validation F1.
 
 Feature importance and the Logistic Regression coefficients both pointed to **contract length, internet service type, and tenure** as the strongest churn drivers — customers without long-term contracts churn substantially more.
 
